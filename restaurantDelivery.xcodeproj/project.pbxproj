@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6964A99320C7258C00921F08 /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6964A99320C7258C00921F08 /* restaurantDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = restaurantDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6964A99620C7258C00921F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6964A99B20C7258C00921F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6964A99D20C7259300921F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		6964A99420C7258C00921F08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6964A99320C7258C00921F08 /* Restaurant.app */,
+				6964A99320C7258C00921F08 /* restaurantDelivery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6964A99220C7258C00921F08 /* Restaurant */ = {
+		6964A99220C7258C00921F08 /* restaurantDelivery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6964A9A520C7259300921F08 /* Build configuration list for PBXNativeTarget "Restaurant" */;
+			buildConfigurationList = 6964A9A520C7259300921F08 /* Build configuration list for PBXNativeTarget "restaurantDelivery" */;
 			buildPhases = (
 				6964A98F20C7258C00921F08 /* Sources */,
 				6964A99020C7258C00921F08 /* Frameworks */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = Restaurant;
+			name = restaurantDelivery;
 			productName = Restaurant;
-			productReference = 6964A99320C7258C00921F08 /* Restaurant.app */;
+			productReference = 6964A99320C7258C00921F08 /* restaurantDelivery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6964A98E20C7258B00921F08 /* Build configuration list for PBXProject "Restaurant" */;
+			buildConfigurationList = 6964A98E20C7258B00921F08 /* Build configuration list for PBXProject "restaurantDelivery" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6964A99220C7258C00921F08 /* Restaurant */,
+				6964A99220C7258C00921F08 /* restaurantDelivery */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6964A98E20C7258B00921F08 /* Build configuration list for PBXProject "Restaurant" */ = {
+		6964A98E20C7258B00921F08 /* Build configuration list for PBXProject "restaurantDelivery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6964A9A320C7259300921F08 /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6964A9A520C7259300921F08 /* Build configuration list for PBXNativeTarget "Restaurant" */ = {
+		6964A9A520C7259300921F08 /* Build configuration list for PBXNativeTarget "restaurantDelivery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6964A9A620C7259300921F08 /* Debug */,

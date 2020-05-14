@@ -2,8 +2,8 @@
 //  LocalData.swift
 //  Restaurant
 //
-//  Created by Denis Bystruev on 25/12/2018.
-//  Copyright © 2018 Denis Bystruev. All rights reserved.
+// Created by Sergey on 14.05.2020.
+//  Copyright © 2020 Sergey Yakovlev. All rights reserved.
 //
 
 import Foundation

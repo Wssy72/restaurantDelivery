@@ -58,7 +58,7 @@
 		6964A98A20C7258B00921F08 = {
 			isa = PBXGroup;
 			children = (
-				6964A99520C7258C00921F08 /* Restaurant */,
+				6964A99520C7258C00921F08 /* restaurantDelivery */,
 				6964A99420C7258C00921F08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6964A99520C7258C00921F08 /* Restaurant */ = {
+		6964A99520C7258C00921F08 /* restaurantDelivery */ = {
 			isa = PBXGroup;
 			children = (
 				699313D720C942F300B9CD5E /* AddToOrderDelegate.swift */,
@@ -91,7 +91,7 @@
 				6964A99F20C7259300921F08 /* LaunchScreen.storyboard */,
 				6964A9A220C7259300921F08 /* Info.plist */,
 			);
-			path = Restaurant;
+			path = restaurantDelivery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +323,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = Restaurant/Info.plist;
+				INFOPLIST_FILE = restaurantDelivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.armenu.Restaurant;
+				PRODUCT_BUNDLE_IDENTIFIER = net.armenu.restaurantDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,12 +341,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = Restaurant/Info.plist;
+				INFOPLIST_FILE = restaurantDelivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.armenu.Restaurant;
+				PRODUCT_BUNDLE_IDENTIFIER = net.armenu.restaurantDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

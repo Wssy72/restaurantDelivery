@@ -76,14 +76,8 @@
 			children = (
 				699313D720C942F300B9CD5E /* AddToOrderDelegate.swift */,
 				6964A99620C7258C00921F08 /* AppDelegate.swift */,
-				6964A9AC20C72EE000921F08 /* CategoryTableViewController.swift */,
-				6964A9B420C7342E00921F08 /* IntermediaryModels.swift */,
+				A540D24F246D666F005AAC1D /* Controllers */,
 				6995CE4521D1EAAA003E2AE3 /* LocalData.swift */,
-				6964A9B620C7372200921F08 /* MenuController.swift */,
-				6964A9B220C7325200921F08 /* MenuItem.swift */,
-				6964A9B020C7313700921F08 /* MenuItemDetailViewController.swift */,
-				6964A9AA20C72EB700921F08 /* MenuTableViewController.swift */,
-				699313DB20C9CD1A00B9CD5E /* OrderConfirmationViewController.swift */,
 				6964A9AE20C72EF900921F08 /* OrderTableViewController.swift */,
 				699313D920C9491600B9CD5E /* UITableViewControllerExtension.swift */,
 				6964A99A20C7258C00921F08 /* Main.storyboard */,
@@ -92,6 +86,28 @@
 				6964A9A220C7259300921F08 /* Info.plist */,
 			);
 			path = restaurantDelivery;
+			sourceTree = "<group>";
+		};
+		A540D24F246D666F005AAC1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6964A9AC20C72EE000921F08 /* CategoryTableViewController.swift */,
+				6964A9B620C7372200921F08 /* MenuController.swift */,
+				6964A9B020C7313700921F08 /* MenuItemDetailViewController.swift */,
+				6964A9AA20C72EB700921F08 /* MenuTableViewController.swift */,
+				699313DB20C9CD1A00B9CD5E /* OrderConfirmationViewController.swift */,
+				A540D250246D6692005AAC1D /* Models */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A540D250246D6692005AAC1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6964A9B220C7325200921F08 /* MenuItem.swift */,
+				6964A9B420C7342E00921F08 /* IntermediaryModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

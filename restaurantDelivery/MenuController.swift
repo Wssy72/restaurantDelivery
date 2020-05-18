@@ -42,7 +42,6 @@ class MenuController {
                 completion(nil)
             }
         }
-        
         // begin the network call to get the list of categories
         task.resume()
     }

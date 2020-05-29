@@ -81,6 +81,7 @@ class MenuController {
             if let data = data,
                 let parsed = try? jsonDecoder.decode(ServerDataModel.self, from: data) {
                 completion(parsed.menuItems)
+                
             } else {
                 completion(nil)
             }

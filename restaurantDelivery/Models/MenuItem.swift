@@ -17,17 +17,9 @@ struct MenuItem: Codable {
     var category: String
     var imageURL: URL
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case description
-        case price
-        case category
-        case imageURL = "image_url"
-    }
 }
 
 // The top key returned by API is called items
-struct MenuItems: Codable {
-    let items: [MenuItem]
+struct ServerDataModel: Codable {
+    let menuItems: [MenuItem]
 }

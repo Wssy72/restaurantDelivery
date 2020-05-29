@@ -15,8 +15,8 @@ class MenuController {
     
     /// Base URL where all requests should go.  Change this to your own server.
     /// The server app for macOS can be downloaded [here](https://www.dropbox.com/sh/bmbhzxqi1886kix/AABFwZJiMj_wxqaUphHFJh5ba?dl=1)
-    
-    let baseURL = URL(string: "http://api.armenu.net:8090/")!
+    ///http://api.armenu.net:8090/
+    let baseURL = URL(string: "http://new.tsniis-vp.com/api_test/index.json")!
     
     /// Execute GET request for the categories with /categories
     /// - parameters:
@@ -31,9 +31,10 @@ class MenuController {
         
         // full URL for category request is.../categories
         let categoryURL = baseURL.appendingPathComponent("categories")
-        
+        print(categoryURL, "category url")
         // create a task for network call to get the list of categories
         let task = URLSession.shared.dataTask(with: categoryURL) { data, response, error in
+
             // /categories endpoint decoded into a Categories object
             if let data = data,
                 let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as? [String:Any],
@@ -46,7 +47,6 @@ class MenuController {
         // begin the network call to get the list of categories
         task.resume()
     }
-    
     /// Execute GET request from /menu with query parameter — category name
     /// - parameters:
     ///     - categoryName: The name of the category
@@ -60,26 +60,27 @@ class MenuController {
         }
         
         // add /menu to the request URL
-        let initialMenuURL = baseURL.appendingPathComponent("menu")
+        //let initialMenuURL = baseURL.appendingPathComponent("menu")
         
         // create category=<category name> component
-        var components = URLComponents(url: initialMenuURL, resolvingAgainstBaseURL: true)!
+        //var components = URLComponents(url: initialMenuURL, resolvingAgainstBaseURL: true)!
         
         // add ?category=<category name> only if categoryName is not empty
-        if categoryName != "" {
-            components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
-        }
+        //if categoryName != "" {
+        //    components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
+        //}
         
         // compose the full url .../menu?category=<category name>
-        let menuURL = components.url!
+        //let menuURL = components.url!
         
         // create a task for category menu network call
-        let task = URLSession.shared.dataTask(with: menuURL) { data, response, error in
+        let task = URLSession.shared.dataTask(with: baseURL) { data, response, error in
             // data from /menu converted into an array of MenuItem objects
+            print(data, response, error)
             let jsonDecoder = JSONDecoder()
             if let data = data,
-                let menuItems = try? jsonDecoder.decode(MenuItems.self, from: data) {
-                completion(menuItems.items)
+                let parsed = try? jsonDecoder.decode(ServerDataModel.self, from: data) {
+                completion(parsed.menuItems)
             } else {
                 completion(nil)
             }

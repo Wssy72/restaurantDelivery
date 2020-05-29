@@ -10,8 +10,8 @@ import Foundation
 
 /// Used to provide local data for debug purposes
 struct LocalData {
-    /// Use local data instead of remote server
-    static let isLocal = true
+    /// Use local data instead of remote server - false/true
+    static let isLocal = false
     
     /// List of categories the app should return
     static let categories = [
